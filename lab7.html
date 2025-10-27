@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>Lab 7 - Interactive Design</title>
+
+ <link rel="stylesheet" href="lab7.css" />
+ <script src="lab7.js" defer></script>
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+    <header class="site-header">
+ <button id="menuButton" class="btn" aria-expanded="false" aria-controls="mainNav">☰
+ Menu</button>
+ <nav id="mainNav" class="nav hidden" aria-label="Main">
+ <a href="#" class="nav__link">Home</a>
+ <a href="#" class="nav__link">Portfolio</a>
+ <a href="#" class="nav__link">Contact</a>
+ </nav>
+ <div class="theme-controls" role="group" aria-label="Theme controls">
+ <button id="lightBtn" class="btn">Light</button>
+ <button id="darkBtn" class="btn">Dark</button>
+ <button id="brandBtn" class="btn">Brand</button>
+ </div>
+ </header>
+
+<main class="container">
+<section class="card">
+<h1>Lab 7 – Interactive Design with Vanilla JavaScript</h1>
+<p>This page will eventually include a toggle menu, theme switcher, and forms that
+validate input and open your email client.</p>
+</section>
+
+<section class="card">
+<h2>Sign Up for Newsletter / Listserv</h2>
+<form id="newsletterForm" novalidate>
+<label for="nlName">Full Name</label>
+<input id="nlName" name="name" type="text" placeholder="Your name" required />
+<label for="nlEmail">Email</label>
+<input id="nlEmail" name="email" type="email" placeholder="you@example.com"
+required />
+<button type="submit" class="btn btn--primary">Sign Up</button>
+</form>
+</section>
+
+<section class="card">
+<h2>Contact Us</h2>
+<form id="contactForm" novalidate>
+<label for="ctName">Your Name</label>
+<input id="ctName" name="name" type="text" required />
+<label for="ctEmail">Your Email</label>
+<input id="ctEmail" name="email" type="email" required />
+<label for="ctSubject">Subject</label>
+<input id="ctSubject" name="subject" type="text" required />
+<label for="ctMessage">Message</label>
+<textarea id="ctMessage" name="message" rows="5" required></textarea>
+<button type="submit" class="btn">Send Message</button>
+</form>
+</section>
+</main>
+
+</body>
+
+<footer class="site-footer">
+<small>© 2025 Mikey Goode</small>
+</footer>
+
+
+</html>
